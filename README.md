@@ -8,7 +8,7 @@ This repository contains code for the paper <em>Deep learning multi-shot 3D loca
 ## How to simulate the designed PSF
 Run
 ```shell
-python infer.py
+python render_psf.py
 ```
 This will create `result` directory and save a multi-stack tiff file. 
 

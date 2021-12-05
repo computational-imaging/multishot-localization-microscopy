@@ -1,4 +1,5 @@
 # Deep learning multi-shot 3D localization microscopy using hybrid optical-electronic computing
+
 This repository contains code for the paper <em>Deep learning multi-shot 3D localization microscopy using hybrid optical-electronic computing</em> by [Hayato Ikoma](https://hayatoikoma.github.io/), [Takamasa Kudo](https://scholar.google.com/citations?user=d1ZrZ6YAAAAJ&hl=en), [Evan Peng](http://stanford.edu/~evanpeng/), [Michael Broxton](http://graphics.stanford.edu/~broxton/) and [Gordon Wetzstein](https://stanford.edu/~gordonwz/).
 
 [[Project website]](https://www.computationalimaging.org/publications/localization-microscopy/)
@@ -6,6 +7,7 @@ This repository contains code for the paper <em>Deep learning multi-shot 3D loca
 [[Paper (to appear)]]()
 
 ## How to simulate the designed PSF
+
 Run
 ```shell
 python render_psf.py
@@ -16,17 +18,18 @@ This will create `result` directory and save a multi-stack tiff file.
 
 
 ## How to set up a conda environement
+
 Run `create_environment.sh` to create a conda environment for this repo.
 You may need to change the version of cudatoolkit depending on your environment.
 
 
 ## Trained model and captured dataset
+
 The trained model and the captured dataset is available [here](https://drive.google.com/file/d/1G94qKB2otmUhW2iKbmOWrL3v__HHfNVW/view?usp=sharing). Expand the downloaded zip file in `data` directory.
 The zip file contains the trained phase mask and model for both fixed cells and live cells, and the captured PSF and raw data.
 
-
-
 ## How to run the training 
+
 Our training framework is based on [Pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning).
 Run
 ```shell
@@ -37,6 +40,7 @@ You can change how many GPUs you want to use with `--gpus` flag.
 The Tensorboard log will be saved in `--default_root_dir`.
 
 ## How to run the inference
+
 Run the following to run the inference.
 ```shell
 python infer.py \
@@ -46,4 +50,12 @@ python infer.py \
 ```
 
 ## Contact
-Hayato Ikoma (hikoma@stanford.edu)
+
+Please direct questions to [hikoma@stanford.edu](hikoma@stanford.edu).
+
+## Acknowledgement
+
+We thank the open source software used in our project, which includes [pytorch](https://github.com/pytorch/pytorch),
+[pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning), [numpy](https://github.com/numpy/numpy),
+[scipy](https://github.com/scipy/scipy), [pytorch-debayer](https://github.com/cheind/pytorch-debayer),
+[matplotlib](https://github.com/matplotlib/matplotlib), and [Fiji](https://github.com/fiji/fiji).

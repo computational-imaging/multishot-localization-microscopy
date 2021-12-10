@@ -4,7 +4,7 @@ This repository contains code for the paper <em>Deep learning multi-shot 3D loca
 
 [[Project website]](https://www.computationalimaging.org/publications/localization-microscopy/)
 
-[[Paper (to appear)]]()
+[[Paper]](https://www.osapublishing.org/ol/fulltext.cfm?uri=ol-46-24-6023&id=465896)
 
 ## How to simulate the designed PSF
 
